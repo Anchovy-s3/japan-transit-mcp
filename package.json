@@ -16,7 +16,8 @@
     "dev": "tsx src/index.ts",
     "start": "node dist/index.js",
     "inspect": "npx @modelcontextprotocol/inspector node dist/index.js",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "prepare": "npm run build"
   },
   "keywords": [
     "mcp",
