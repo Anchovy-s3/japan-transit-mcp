@@ -1,0 +1,41 @@
+{
+  "name": "japan-transit-mcp",
+  "version": "0.1.0",
+  "description": "MCP server for Japan transit route search using https://api.transit.ls8h.com/",
+  "type": "module",
+  "bin": {
+    "japan-transit-mcp": "./dist/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/index.ts",
+    "start": "node dist/index.js",
+    "inspect": "npx @modelcontextprotocol/inspector node dist/index.js",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "mcp",
+    "transit",
+    "japan",
+    "route",
+    "journey"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.1",
+    "tsx": "^4.20.3",
+    "typescript": "^5.8.3"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
